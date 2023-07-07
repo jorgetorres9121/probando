@@ -1,0 +1,62 @@
+En git hay tres cuestiones para trabajar
+1-WORKING DIRECTORY 
+2-STAGING AREA (se agrega con add)
+3-Local REPOSITORY (se agrega con el commit)
+
+
+Pasos:
+1 descargar git hug
+2 crear carpeta de proyecto, 
+3 abrir consola git hug y ubicar carpeta de proyecto e iniciar git init
+4 git status
+5 Crear git commit y ponerle el nombre del punto de partida del proyecto
+
+Si la consola se vuelve loca escribir q y enter o :q enter o :q!
+Crear un usuario y email
+git config --global user.name ¨Nombre Usuario¨
+git config --global user.mail "correo de git"
+Si queremos verlo hay que escribir lo mismo sin el nombre al final y sin comillas y si queremos cambiarlo escribirlo de nuevo con el nuevo correo o nombre.
+
+
+
+Comandos en la consola de Git
+
+mkdir > para crear un directorio (carpeta)
+ls > para ver lista de archivos o carpetas que se encuentran en ese directorio
+cd > para cambiar directorio Ejemplo> cd /users
+cd .. > para voler al directorio raiz
+cd /.. > para retroceder un paso en el directorio
+cd nombrecarpeta > permite acceder a una carpetata dentro de un directorio
+touch > permite crear archivos vacios .txt por dentro
+cat > muestra el contenido que hay dentro de un archivo. ej> cat vacio.txt
+history > muestra la historia de los comandos para repetir el comando podriamos
+hacer signo de admiracion y el numero de la lista de comandos y se repitira ese comando.
+rm > para remover un carpeta ej> rm nombrecarpeta.extencion... (cuidado se puede eliminar archivos del disco duro)
+comando --help > nos brinda informacion sobre comando determinado.1
+
+Otros
+pwd > esto nos muestra en que directorio estamos.
+git log > muestra las fechas y mensajes de los commit que se han realizado
+.gitignore > esto es para que git ignore una carpeta o archivo que yo quiera ej> crear archivo .gitignore en el proyecto y escribirle los nombres de carpetas y archivos que quiero que ignore.
+.gitignores lo puedo agregar a commit (staging area)
+git branch > para ver dentro de que version estoy trabajando o las versiones que he creado.
+git branch nombre version > con esto creamos un nombre para la version que estamos trabajando.
+git checkout nombre version > con esto nos movemos para trabajar con la version que seleccionemos.
+git add . > esto es para agregar todos los archivos modificados al staging area.
+
+comandos basicos
+git init > para crear un proyecto nuevo e indicarle que vamos a utilizar git
+git add <file> > Es para pasar desde el wordking directory al staging area
+git status > Es para ver en que estados estan mis archivos, para ver donde esta, si estan en el wordking directory o staging area etc.
+git commit > Es para pasarlo desde el Staging area al repositorio. Para tirar una primera foto del codigo.
+git commit -m "MEnsaje" > esto es para hacer un commit y escribir el mensaje ahi mismo en consola sin salir de ahi.
+git log
+git log --oneline > se veran todos los commit en una linea
+git log -stat > se vera la informacion mas detallada
+git push > Es para subirlo a un repositorio remoto (despues que ya esten en servidor remoto con este comando de forma local se actualizara en la nube porque ya hemos configurado todo)
+git pull > Este te trae los cambios que han creado los demas desarrolladores
+git clone > Te da una copia desde el servidor central donde esta el codigo hacia tu computador para que empieces a trabajar.
+git checkout -- nombre archivo > esto elimina los cambios realizados antes del ultimo commit.
+git diff > para ver las diferencias de archivos que se han generado. ej> git diff nombre archivo
+
+
